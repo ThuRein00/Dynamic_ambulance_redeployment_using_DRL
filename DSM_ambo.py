@@ -94,9 +94,9 @@ import numpy as np
 import os
 
 file_paths = {
-    "accident_rate": "final_version/data/accident_rate.csv",
-    "distance_Base_to_Incident_df": "final_version/data/distance_base_to_incident.csv",
-    "nearest_place" : "final_version/data/nearest_places_data.csv",
+    "accident_rate": "data/accident_rate.csv",
+    "distance_Base_to_Incident_df": "data/distance_base_to_incident.csv",
+    "nearest_place" : "data/nearest_places_data.csv",
 }
 
 # Check if files exist

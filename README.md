@@ -1,6 +1,6 @@
 # Dynamic Ambulance Redeployment in Bangkok Using Deep Reinforcement Learning
 
-A Deep Reinforcement Learning system for dynamic ambulance redeployment in Bangkok, Thailand. When an ambulance becomes available after dropping a patient at a hospital, a trained PPO agent recommends which base it should relocate to — optimizing future emergency response coverage.
+A Deep Reinforcement Learning system for dynamic ambulance redeployment in Bangkok, Thailand. When an ambulance becomes available after dropping a patient at a hospital, a trained PPO agent recommends which base it should relocate to while optimizing future emergency response coverage.
 
 ## Results
 
@@ -15,6 +15,7 @@ Evaluated over 500 simulated days against baseline policies (35 ambulance fleet)
 | Relocation travel time (min) | 14.71 | **12.47** | 15% reduction |
 
 The model also demonstrates robustness to unrecognized accident rate surges and changes in ambulance fleet size without retraining.
+![alt text](image.png)
 
 ## How It Works
 
