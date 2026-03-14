@@ -15,7 +15,7 @@ Evaluated over 500 simulated days against baseline policies (35 ambulance fleet)
 | Relocation travel time (min) | 14.71 | **12.47** | 15% reduction |
 
 The model also demonstrates robustness to unrecognized accident rate surges and changes in ambulance fleet size without retraining.
-![alt text](image.png)
+![alt text](pictures/effect_of_inc_incident_rate.png)
 
 ## How It Works
 
@@ -30,9 +30,9 @@ A Discrete Event Simulation built with SimPy and wrapped in a Gymnasium interfac
 
 **Spatial Setup**
 - Bangkok divided into **52 grid cells** → potential ambulance bases
-![alt text](image-1.png)
+![alt text](pictures/incident_grid.png)
 - Bangkok divided into **126 finer grid cells** → incident generation points
-![alt text](image-2.png)
+![alt text](pictures/base_location.png)
 - Shortest-path distances pre-computed via A\* on OpenStreetMap road network and stored as lookup tables for fast access
 
 **State Space (4 features)**
@@ -43,7 +43,8 @@ A Discrete Event Simulation built with SimPy and wrapped in a Gymnasium interfac
 
 **Action**: Which of the 52 bases the available ambulance should relocate to
 
-**Reward**: `R = -tanh(response_time - 8)` — smooth signal centered at the 8-minute golden response threshold
+**Reward**: `R = -tanh(response_time - 8)` 
+smooth signal centered at the 8-minute golden response threshold
 
 **Initial Placement** ([`DSM_ambo.py`](DSM_ambo.py))
 
