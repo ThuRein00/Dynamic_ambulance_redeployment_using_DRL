@@ -14,8 +14,6 @@ cache/
 venv/
 env/
 
-# Images
-*.png
 
 # OS
 .DS_Store
